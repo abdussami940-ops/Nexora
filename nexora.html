@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090a12">
+    <meta name="description" content="Explore artificial intelligence, science, technology and fascinating ideas with NEXORA. Discover more. Know better.">
+
+    <title>NEXORA — Discover More. Know Better.</title>
+
+    <link rel="stylesheet" href="nexora.css">
+    <script src="nexora.js" defer></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="navbar">
+            <a class="logo" href="#home" aria-label="NEXORA home">
+                NEX<span>ORA</span><span class="logo-dot">.</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#explore">Explore</a>
+                <a href="#discover">Discover</a>
+                <a href="#quizzes">Quizzes</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <a href="#explore" class="nav-cta">
+                Start learning <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="status-label">
+                    <span class="status-dot"></span>
+                    A SPACE FOR CURIOUS MINDS
+                </div>
+
+                <h1>
+                    The world is full<br>
+                    of <span class="gradient-text">things to know.</span>
+                </h1>
+
+                <p class="hero-description">
+                    From artificial intelligence to the mysteries of space,
+                    explore ideas that expand your perspective and make
+                    the complex easier to understand.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#explore" class="button button-primary">
+                        Explore knowledge <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#quizzes" class="button button-secondary">
+                        Test your knowledge
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <span>✦</span>
+                    Learn something new, every visit.
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="visual-glow"></div>
+
+                <div class="visual-core">
+                    <span class="core-symbol">N</span>
+                    <span class="core-caption">KNOWLEDGE / INFINITE</span>
+                </div>
+
+                <div class="floating-card floating-card-top">
+                    <span class="floating-icon">✦</span>
+                    <div>
+                        <strong>Think deeper.</strong>
+                        <p>Question everything.</p>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-bottom">
+                    <span class="floating-icon cyan-icon">◎</span>
+                    <div>
+                        <strong>Discover more.</strong>
+                        <p>One idea at a time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 — KNOWLEDGE</span>
+                <span>BUILT AROUND CURIOSITY</span>
+                <a href="#explore">SCROLL TO EXPLORE ↓</a>
+            </div>
+        </section>
+
+        <!-- Topic ticker -->
+        <div class="topic-strip" aria-label="Topics covered">
+            <span>ARTIFICIAL INTELLIGENCE</span>
+            <span class="strip-star">✳</span>
+            <span>SCIENCE &amp; SPACE</span>
+            <span class="strip-star">✳</span>
+            <span>TECHNOLOGY</span>
+            <span class="strip-star">✳</span>
+            <span>HUMAN PSYCHOLOGY</span>
+        </div>
+
+        <!-- Explore -->
+        <section class="section explore-section" id="explore">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / EXPLORE</p>
+                    <h2>Curiosity starts here<span class="heading-dot">.</span></h2>
+                    <p class="section-description">
+                        Big ideas, clear explanations, and knowledge worth your time.
+                    </p>
+                </div>
+
+                <a href="#discover" class="text-link">
+                    Explore the world <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <!-- Search -->
+            <form class="search-form" id="searchForm" role="search">
+                <label class="search-icon" for="siteSearch" aria-hidden="true">⌕</label>
+
+                <input
+                    type="search"
+                    id="siteSearch"
+                    name="q"
+                    placeholder="Search topics, ideas and discoveries..."
+                    autocomplete="off"
+                    aria-label="Search knowledge topics"
+                >
+
+                <button type="submit" class="search-button">Search</button>
+            </form>
+
+            <p id="searchStatus" class="search-status" role="status" aria-live="polite"></p>
+
+            <!-- Categories -->
+            <div class="category-list" aria-label="Filter topics">
+                <button type="button" class="category-chip active"
+                        data-category="all" aria-pressed="true">
+                    All topics
+                </button>
+
+                <button type="button" class="category-chip"
+                        data-category="technology" aria-pressed="false">
+                    Technology
+                </button>
+
+                <button type="button" class="category-chip"
+                        data-category="science" aria-pressed="false">
+                    Science
+                </button>
+
+                <button type="button" class="category-chip"
+                        data-category="mind" aria-pressed="false">
+                    Psychology
+                </button>
+
+                <button type="button" class="category-chip"
+                        data-category="security" aria-pressed="false">
+                    Cybersecurity
+                </button>
+            </div>
+
+            <!-- Topic cards -->
+            <div class="topic-grid" id="topicGrid">
+
+                <!-- AI CARD: CONNECTED TO ai.html -->
+                <article class="topic-card featured-card"
+                         data-category="technology"
+                         data-search="artificial intelligence ai machine learning technology">
+
+                    <div class="card-art art-ai" aria-hidden="true">
+                        <span class="art-orbit"></span>
+                        <span class="art-symbol">✳</span>
+                        <span class="art-label">INTELLIGENCE / 001</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">TECHNOLOGY</span>
+                            <span>6 MIN READ</span>
+                        </div>
+
+                        <h3>Artificial Intelligence</h3>
+
+                        <p>
+                            Discover how AI systems learn patterns, generate
+                            content, and help people solve problems.
+                        </p>
+
+                        <a href="ai.html" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- SPACE -->
+                <article class="topic-card"
+                         data-category="science"
+                         data-search="space planets universe astronomy science">
+
+                    <div class="card-art art-space" aria-hidden="true">
+                        <span class="space-star star-one">✦</span>
+                        <span class="space-star star-two">·</span>
+                        <span class="planet"></span>
+                        <span class="art-label">THE UNIVERSE / 002</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">SCIENCE</span>
+                            <span>5 MIN READ</span>
+                        </div>
+
+                        <h3>The mysteries of space</h3>
+
+                        <p>
+                            Explore planets, distant galaxies, black holes,
+                            and the questions scientists are investigating.
+                        </p>
+
+                        <a href="#discover" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CYBERSECURITY -->
+                <article class="topic-card"
+                         data-category="security"
+                         data-search="cybersecurity internet privacy phishing password safety">
+
+                    <div class="card-art art-security" aria-hidden="true">
+                        <span class="shield-symbol">⬡</span>
+                        <span class="art-label">DIGITAL SAFETY / 003</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">CYBERSECURITY</span>
+                            <span>4 MIN READ</span>
+                        </div>
+
+                        <h3>Stay safe online</h3>
+
+                        <p>
+                            Learn how phishing works, why strong passwords
+                            matter, and how to protect your accounts.
+                        </p>
+
+                        <a href="#discover" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PSYCHOLOGY -->
+                <article class="topic-card"
+                         data-category="mind"
+                         data-search="psychology brain memory learning habits human mind">
+
+                    <div class="card-art art-mind" aria-hidden="true">
+                        <span class="mind-symbol">◉</span>
+                        <span class="art-label">THE HUMAN MIND / 004</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">PSYCHOLOGY</span>
+                            <span>5 MIN READ</span>
+                        </div>
+
+                        <h3>How memory works</h3>
+
+                        <p>
+                            Discover how the brain stores information
+                            and why practice helps us remember.
+                        </p>
+
+                        <a href="#discover" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROGRAMMING -->
+                <article class="topic-card"
+                         data-category="technology"
+                         data-search="programming coding websites software computers">
+
+                    <div class="card-art art-code" aria-hidden="true">
+                        <span class="code-symbol">&lt;/&gt;</span>
+                        <span class="art-label">BUILD THE FUTURE / 005</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">PROGRAMMING</span>
+                            <span>7 MIN READ</span>
+                        </div>
+
+                        <h3>How websites work</h3>
+
+                        <p>
+                            Understand the roles of HTML, CSS, JavaScript,
+                            servers, and databases.
+                        </p>
+
+                        <a href="#discover" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- SCIENCE -->
+                <article class="topic-card"
+                         data-category="science"
+                         data-search="scientific method experiments evidence critical thinking">
+
+                    <div class="card-art art-science" aria-hidden="true">
+                        <span class="science-symbol">⟡</span>
+                        <span class="art-label">ASK WHY / 006</span>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">SCIENCE</span>
+                            <span>4 MIN READ</span>
+                        </div>
+
+                        <h3>The power of questions</h3>
+
+                        <p>
+                            Learn how observation, evidence, and testing
+                            help us investigate the world.
+                        </p>
+
+                        <a href="#discover" class="card-link">
+                            Discover the topic <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="emptyState" class="empty-state" hidden>
+                No matching topics found. Try another search.
+            </p>
+        </section>
+
+        <!-- Daily Discovery -->
+        <section class="section discovery-section" id="discover">
+            <div class="discovery-panel">
+                <div class="discovery-copy">
+                    <p class="eyebrow">02 / DAILY DISCOVERY</p>
+
+                    <h2>Small facts.<br><span>Big perspectives.</span></h2>
+
+                    <p>
+                        Your next interesting discovery could change
+                        the way you see something familiar.
+                    </p>
+
+                    <button type="button" class="button button-primary" id="newFactButton">
+                        Another discovery <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+
+                <article class="fact-card" aria-live="polite">
+                    <span class="fact-number" id="factNumber">DISCOVERY / 001</span>
+                    <div class="fact-icon" aria-hidden="true">✧</div>
+
+                    <h3 id="factTitle">Your brain adapts as you learn.</h3>
+
+                    <p id="factText">
+                        Learning can strengthen connections between neurons.
+                        This ability of the nervous system to change is known
+                        as neuroplasticity.
+                    </p>
+
+                    <span class="fact-footer">STAY CURIOUS — NEXORA</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="section quiz-section" id="quizzes">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">03 / KNOWLEDGE LAB</p>
+                    <h2>Put your mind to the test<span class="heading-dot">.</span></h2>
+                    <p class="section-description">
+                        Answer questions, learn from explanations, and
+                        see what you know.
+                    </p>
+                </div>
+            </div>
+
+            <div class="quiz-panel" id="quizContainer">
+                <div class="quiz-topline">
+                    <span class="card-category">GENERAL KNOWLEDGE</span>
+                    <span id="quizProgress">QUESTION 1 OF 5</span>
+                </div>
+
+                <div class="quiz-progress-track"
+                     role="progressbar"
+                     aria-label="Quiz progress"
+                     aria-valuemin="0"
+                     aria-valuemax="5"
+                     aria-valuenow="0"
+                     id="quizProgressBar">
+                    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+
+                <h3 id="quizQuestion">Loading your first question...</h3>
+
+                <div class="quiz-answers" id="quizAnswers"></div>
+
+                <p id="quizFeedback" class="quiz-feedback"
+                   role="status" aria-live="polite"></p>
+
+                <div class="quiz-controls">
+                    <span id="quizScore">SCORE: 0</span>
+
+                    <button type="button" class="button button-primary"
+                            id="quizNext" disabled>
+                        Choose an answer
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about-section" id="about">
+            <p class="eyebrow">04 / OUR PURPOSE</p>
+
+            <h2>Made for the endlessly curious<span class="heading-dot">.</span></h2>
+
+            <p class="about-description">
+                NEXORA is a knowledge platform built around one simple idea:
+                understanding the world should feel exciting, accessible,
+                and worth your time. Explore new topics, ask better questions,
+                and keep learning at your own pace.
+            </p>
+
+            <div class="about-values">
+                <div>
+                    <span>01</span>
+                    <h3>Explore</h3>
+                    <p>Go beyond what you already know.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>Understand</h3>
+                    <p>Make complex ideas easier to grasp.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>Grow</h3>
+                    <p>Turn curiosity into lasting knowledge.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="logo" href="#home">
+                    NEX<span>ORA</span><span class="logo-dot">.</span>
+                </a>
+
+                <p>Discover More. Know Better.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#explore">Explore</a>
+                <a href="#quizzes">Quizzes</a>
+                <a href="#about">About us</a>
+                <a href="mailto:hello@nexora.example">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear">2026</span> NEXORA. Built for curious minds.</p>
+            <p>Stay curious. Keep discovering.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore Artificial Intelligence with NEXORA. Learn how AI works, its applications, benefits, limitations and future.">
+
+  <title>Artificial Intelligence — NEXORA</title>
+
+  <link rel="stylesheet" href="nexora.css">
+
+  <style>
+    .article-page {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+      padding: 42px 0 90px;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 35px;
+      color: #a5b4fc;
+      text-decoration: none;
+    }
+
+    .article-back:hover {
+      color: #ffffff;
+    }
+
+    .article-hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(30px, 6vw, 70px);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 26px;
+      background:
+        radial-gradient(ellipse at top right, rgba(124, 58, 237, 0.3), transparent 55%),
+        linear-gradient(135deg, #111827, #10152a);
+    }
+
+    .article-label {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 13px;
+      border: 1px solid rgba(167, 139, 250, 0.35);
+      border-radius: 999px;
+      color: #c4b5fd;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    .article-hero h1 {
+      max-width: 800px;
+      margin: 0 0 22px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+    }
+
+    .article-hero p {
+      max-width: 680px;
+      color: #cbd5e1;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 28px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 45px;
+      align-items: start;
+      margin-top: 42px;
+    }
+
+    .article-content {
+      min-width: 0;
+    }
+
+    .article-content section {
+      margin-bottom: 38px;
+      scroll-margin-top: 25px;
+    }
+
+    .article-content h2 {
+      margin: 0 0 15px;
+      font-size: clamp(24px, 3vw, 32px);
+      letter-spacing: -0.7px;
+    }
+
+    .article-content p,
+    .article-content li {
+      color: #cbd5e1;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .article-content ul {
+      padding-left: 22px;
+    }
+
+    .article-content li {
+      margin-bottom: 10px;
+    }
+
+    .article-callout {
+      margin: 25px 0;
+      padding: 22px;
+      border-left: 3px solid #8b5cf6;
+      border-radius: 0 14px 14px 0;
+      background: rgba(139, 92, 246, 0.1);
+    }
+
+    .article-callout strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #ddd6fe;
+    }
+
+    .article-callout p {
+      margin: 0;
+    }
+
+    .article-sidebar {
+      position: sticky;
+      top: 24px;
+      padding: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 18px;
+      background: rgba(15, 23, 42, 0.65);
+    }
+
+    .article-sidebar h3 {
+      margin-top: 0;
+    }
+
+    .article-sidebar a {
+      display: block;
+      padding: 10px 0;
+      color: #cbd5e1;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .article-sidebar a:hover {
+      color: #a5b4fc;
+    }
+
+    .article-cta {
+      margin-top: 45px;
+      padding: 28px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.18), rgba(124, 58, 237, 0.1));
+    }
+
+    .article-cta a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #c4b5fd;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .article-footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .article-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .article-sidebar {
+        position: static;
+        grid-row: 1;
+      }
+
+      .article-hero h1 {
+        letter-spacing: -1px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="navbar">
+      <a class="logo" href="nexora.html" aria-label="NEXORA home">
+        NEX<span>ORA</span><span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="nexora.html#explore">Explore</a>
+        <a href="nexora.html#discover">Discover</a>
+        <a href="nexora.html#quizzes">Quizzes</a>
+        <a href="nexora.html#about">About</a>
+      </nav>
+
+      <a href="#article-start" class="nav-cta">Start reading ↗</a>
+    </div>
+  </header>
+
+  <main class="article-page" id="main">
+    <a class="article-back" href="nexora.html#explore">
+      ← Back to Explore
+    </a>
+
+    <section class="article-hero">
+      <span class="article-label">NEXORA EXPLAINED · TECHNOLOGY</span>
+
+      <h1>Artificial Intelligence:
+        <span class="gradient-text">A Beginner's Guide</span>
+      </h1>
+
+      <p>
+        Discover what artificial intelligence is, how it learns from data,
+        where it is used, and what its growing role means for our future.
+      </p>
+
+      <div class="article-meta">
+        <span>📚 Beginner friendly</span>
+        <span>⏱ 6 min read</span>
+        <span>🧠 AI & Technology</span>
+      </div>
+    </section>
+
+    <div class="article-layout" id="article-start">
+      <article class="article-content">
+        <section id="what-is-ai">
+          <h2>01. What is Artificial Intelligence?</h2>
+
+          <p>
+            Artificial Intelligence, commonly called AI, is a field of
+            computer science focused on creating systems that perform tasks
+            associated with human intelligence. These tasks can include
+            understanding language, recognising patterns, making predictions
+            and helping solve problems.
+          </p>
+
+          <p>
+            AI is not a single program or machine. It includes many approaches,
+            from systems that follow carefully defined rules to machine
+            learning models trained using examples.
+          </p>
+
+          <div class="article-callout">
+            <strong>The key idea</strong>
+            <p>
+              AI systems process information using methods designed by people.
+              Their abilities and limitations depend on how they are built,
+              trained and used.
+            </p>
+          </div>
+        </section>
+
+        <section id="how-ai-works">
+          <h2>02. How does AI work?</h2>
+
+          <p>
+            Many modern AI systems use machine learning. During training,
+            a model processes data and adjusts its internal parameters
+            to learn patterns that help it perform a particular task.
+          </p>
+
+          <p>A simplified AI workflow looks like this:</p>
+
+          <ul>
+            <li><strong>Data:</strong> Examples or information are collected.</li>
+            <li><strong>Training:</strong> A model learns patterns from the data.</li>
+            <li><strong>Testing:</strong> People evaluate how well the model performs.</li>
+            <li><strong>Inference:</strong> The trained model produces an output for new input.</li>
+            <li><strong>Evaluation:</strong> Results are checked for quality, reliability and potential risks.</li>
+          </ul>
+
+          <p>
+            Not every AI system learns in exactly the same way. Some rely on
+            rules, search algorithms or combinations of different techniques.
+          </p>
+        </section>
+
+        <section id="types-of-ai">
+          <h2>03. Different types of AI</h2>
+
+          <p>
+            AI can be grouped in several ways. One useful distinction is
+            between systems designed for specific tasks and the broader idea
+            of general-purpose machine intelligence.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Narrow AI:</strong> Systems designed for particular
+              tasks, such as translation, recommendations or image recognition.
+            </li>
+            <li>
+              <strong>Generative AI:</strong> Systems that can generate
+              content such as text, images, audio or computer code.
+            </li>
+            <li>
+              <strong>Artificial General Intelligence (AGI):</strong> A
+              proposed kind of AI with broad abilities comparable to human
+              cognitive flexibility. It remains a research concept, not an
+              established achievement.
+            </li>
+          </ul>
+        </section>
+
+        <section id="real-world-ai">
+          <h2>04. AI in everyday life</h2>
+
+          <p>
+            Many people already interact with AI, sometimes without noticing.
+            It can help people and organisations in a wide range of fields.
+          </p>
+
+          <ul>
+            <li><strong>Education:</strong> Explaining concepts and supporting practice.</li>
+            <li><strong>Healthcare:</strong> Helping analyse medical information under professional oversight.</li>
+            <li><strong>Science:</strong> Finding patterns in large research datasets.</li>
+            <li><strong>Accessibility:</strong> Supporting speech recognition, captions and text assistance.</li>
+            <li><strong>Cybersecurity:</strong> Helping identify suspicious activity and unusual patterns.</li>
+            <li><strong>Creative work:</strong> Assisting with brainstorming, design and drafting.</li>
+          </ul>
+
+          <p>
+            AI outputs can be wrong, incomplete or biased. Important decisions
+            should be checked by qualified people rather than relying blindly
+            on an automated result.
+          </p>
+        </section>
+
+        <section id="benefits-and-risks">
+          <h2>05. Benefits and challenges</h2>
+
+          <p>
+            AI can help automate repetitive work, analyse information quickly
+            and make some tools easier to access. It can also support new
+            discoveries and help people explore ideas.
+          </p>
+
+          <p>However, responsible AI use requires attention to:</p>
+
+          <ul>
+            <li>Privacy and the protection of personal information.</li>
+            <li>Errors, misleading outputs and unreliable sources.</li>
+            <li>Bias and unfair treatment in automated decisions.</li>
+            <li>Security risks, misuse and harmful applications.</li>
+            <li>Human oversight, accountability and the effects on work.</li>
+          </ul>
+        </section>
+
+        <section id="future-of-ai">
+          <h2>06. What might the future hold?</h2>
+
+          <p>
+            AI research continues to advance in areas such as language,
+            robotics, scientific discovery and personalised tools. The future
+            will depend not only on technical progress but also on how people
+            test, govern and apply these systems.
+          </p>
+
+          <p>
+            Understanding AI means learning both what it can do and where
+            its limitations lie. Curiosity, critical thinking and checking
+            reliable sources remain essential skills.
+          </p>
+        </section>
+
+        <section id="key-takeaway">
+          <h2>Key takeaway</h2>
+
+          <p>
+            Artificial intelligence is a broad field that helps computers
+            perform tasks using rules, learned patterns and other techniques.
+            It offers useful possibilities, but thoughtful human judgement
+            remains important.
+          </p>
+        </section>
+
+        <div class="article-cta">
+          <h2>Keep exploring with NEXORA</h2>
+          <p>Discover more ideas across science, technology and the human mind.</p>
+          <a href="nexora.html#explore">Explore more topics →</a>
+          <br>
+          <a href="nexora.html#quizzes">Test your knowledge →</a>
+        </div>
+
+        <footer class="article-footer">
+          <p>
+            NEXORA · Learn something new, every day.
+          </p>
+          <p>
+            Educational overview only. AI tools and capabilities vary, and
+            important claims should be verified using reliable sources.
+          </p>
+        </footer>
+      </article>
+
+      <aside class="article-sidebar">
+        <h3>On this page</h3>
+        <a href="#what-is-ai">What is AI?</a>
+        <a href="#how-ai-works">How AI works</a>
+        <a href="#types-of-ai">Types of AI</a>
+        <a href="#real-world-ai">Real-world uses</a>
+        <a href="#benefits-and-risks">Benefits & challenges</a>
+        <a href="#future-of-ai">The future</a>
+        <a href="#key-takeaway">Key takeaway</a>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
